@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atividade 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+
+    <!-- Faça uma página html e o código em javascript que leia o código do item pedido, a quantidade e calcule o
+    valor a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item. -->
+
+            <form>
+            <div class="formulario"> 
+                <div class="sal"> 
+                    <span> Código  </span>
+                    <input type="number" placeholder="Número do código" style="text-align: left"  id="cod" required>  
+                </div>
+            <br>
+ 
+                <input type="button" onclick="Pedido()" class="btn" id="btn-init" value="Pedido" />
+                <input type="button" onclick="Reset()" class="btn" id="btn-fim" value="Fim" />
+
+            </div>
+            </form>
+            <br> <br>
+            <table>
+                <tr> 
+                    <th> Código</th>
+                    <th> Cargo</th>
+                    <th> Percentual</th>
+                </tr>
+
+                <tr> 
+                    <td id="codigo">100</td>
+                    <td>Cachorro quente</td>
+                    <td>5.00</td>
+                </tr>
+
+                <tr > 
+                    <td id="codigo">101</td>
+                    <td>Bauru simples</td>
+                    <td>6.00</td>
+                </tr>
+                
+                <tr> 
+                    <td id="codigo">102</td>
+                    <td>Bauru c/ovo</td>
+                    <td>7.00</td>
+                </tr>
+                <tr> 
+                    <td id="codigo">103</td>
+                    <td>Hamburger</td>
+                    <td>8.00</td>
+                </tr>
+
+                <tr> 
+                    <td id="codigo">104</td>
+                    <td>Cheeseburger</td>
+                    <td>9.00</td>
+                </tr>
+
+                <tr> 
+                    <td id="codigo">105</td>
+                    <td>Refrigerante</td>
+                    <td>4.00</td>
+                </tr>
+
+            </table>
+
+            <div id="resultado"> TOTAL  = R$ <span id="result"> 0.00 </span></div>
+            
+
+
+    <script src="script.js"></script>
+</body>
+</html>

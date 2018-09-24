@@ -1,0 +1,30 @@
+*{
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: roboto;
+}
+
+table{
+    background: black;
+    border: 3px solid rgb(255, 0, 0);
+    color:white;
+}
+th,td{
+    padding: 2px 5px;}
+
+
+.final{
+    background: red;
+    color:white;
+}
+
+.titulo{
+    color: rgb(255, 255, 255)
+}
+
+.btn button{
+    width: 100%;
+    background: red;
+    color:white;
+    border: none;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste</title>
+</head>
+<script>
+    function frase(){
+    nome = document.getElementById('nome').value;
+    document.getElementById('div').innerHTML = "Oi " + nome
+
+}
+</script>
+<body>
+    <input type="text" placeholder="Digite seu nome" id="nome" />
+    <input type="button" value="APERTE AQUI" onclick="frase()" />
+    <div id="div"> </div>
+    <script src="frase.js" />
+</body>
+</html>

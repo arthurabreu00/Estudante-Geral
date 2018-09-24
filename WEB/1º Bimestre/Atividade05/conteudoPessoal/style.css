@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+menu{
+    width: 290px;
+    padding: 20px;
+}
+
+
+input{
+    width: 85%;
+    padding: 20px;
+}
+.btn{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+button{
+    border: 1px solid black;
+    padding: 30px;
+    background:rgb(89, 156, 21);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+
+#result{
+    padding:20px;
+    background: rgb(202, 6, 6);
+    color:white
+}
+
+#reset{
+    width: 100%;
+}

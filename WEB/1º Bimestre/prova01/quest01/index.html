@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atividade 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<script>
+var sal = document.getElementById('sal');
+var cargo = document.getElementById('cargo');
+var btn = document.getElementById('btn');
+var result = document.getElementById('result');
+
+
+
+function Calc(){
+
+    if(cargo.value == '101') 
+        var final = Number(sal.value) * 1.10;
+    else if(cargo.value == '102') 
+        var final = Number(sal.value) * 1.20;
+    else if(cargo.value == '103') 
+        var final = Number(sal.value) * 1.30;
+    else 
+        var final = Number(sal.value) * 1.40;
+
+    result.innerHTML = 
+    "O Seu antigo salário é de R$" + sal.value + "<br />" 
+    + "O seu novo salário é de R$" +  final.toFixed(2) + "<br />" 
+    + "A diferença salarial é de R$" + (final - Number(sal.value)).toFixed(2);
+
+
+
+}
+
+ </script>
+
+<body>
+
+        <!-- 1 - Uma empresa concederá um aumento de salário aos seus funcionários, variável de acordo com o
+        cargo, conforme a tabela abaixo. Faça uma página html e o código em javascript que leia o salário e o
+        cargo de um funcionário e calcule o novo salário. Se o cargo do funcionário não estiver na tabela, ele
+        deverá, então, receber 40% de aumento. Mostre o salário antigo, o novo salário e a diferença. -->
+            <form>
+                <div class="sal"> 
+                    <span> Salário </span>
+                    <input type="number" placeholder="Salário Atual" style="text-align: left" min="900" id="sal" required>  
+                </div>
+                <div class="sal"> 
+                        <span> Cargo </span> &nbsp;
+                        <input type="number" placeholder="Código do cargo" style="text-align: left" min="100" id="cargo">  
+                </div> <br>
+                <input type="button" onclick="Calc()" id="btn" value="Novo Salário" />
+            </form>
+            <br> <br>
+            <table>
+                <tr> 
+                    <th> Código</th>
+                    <th> Cargo</th>
+                    <th> Percentual</th>
+                </tr>
+
+                <tr> 
+                    <td id="gerente">101</td>
+                    <td>Gerente</td>
+                    <td>10%</td>
+                </tr>
+
+                <tr id="Engenheiro"> 
+                    <td>102</td>
+                    <td>Engenheiro</td>
+                    <td>20%</td>
+                </tr>
+                
+                <tr id="tecnico"> 
+                    <td>103</td>
+                    <td>Técnico</td>
+                    <td>20%</td>
+                </tr>
+
+            </table>
+
+            <div id="result">-</div>
+            
+
+
+    <script src="script.js"></script>
+</body>
+</html>

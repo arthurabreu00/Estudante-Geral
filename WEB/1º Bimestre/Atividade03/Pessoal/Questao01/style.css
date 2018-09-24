@@ -1,0 +1,16 @@
+*{
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    position: absolute;
+    left:43%;
+}
+
+
+
+.dinheiro{
+    width: 100%;
+}

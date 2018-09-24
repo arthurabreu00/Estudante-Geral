@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+<div id="tudo"> 
+    <div class="content">
+        <div class="title"> 
+            <div class="decalc">
+                <i class="fas fa-calculator"></i> 
+            </div>
+
+            <div class="text_one">
+                <h4 class="leitura"> Calculadora de IMC</h4>
+                <span>Calcule o seu índice de massa corporal</span>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="ps">
+            <h4> Peso</h4>
+            <input type="text" class="peso"  placeholder="Peso" min="0.00" max="500.00"> <span class="dtl1">KG</span>
+        </div>
+
+        <div class="al">
+               <div class="jeitnho"> <h4>Altura </h4> </div> 
+            <input type="text" class="altura" placeholder="Altura" min="1.00" max="2.50"> <span class="dtl2"> ME</span>
+        </div>
+    </div>
+    <div class="display">
+            <div class="resultadoIMC">
+                <div class="titleIMC"> <h4> O Seu IMC é:</h4> </div> 
+                <div class="result"><h1 class="resultFinal"> 0.00 </h1></div>
+                <div class="Info"><h2 class="resultEst">Digite seus dados! </h2> </div>
+            </div>
+        
+        <!-- <div class="table">
+            <table>
+                <tr>
+                    <td class="tb abaixo"> Abaixo do Peso</td>
+                </tr>
+                <tr>
+                    <td class="tb normal"> Normal </td>
+                </tr>
+                <tr>
+                    <td class="tb sobre-peso"> Sobre Peso </td>
+                </tr>
+                <tr>
+                    <td class="tb obeso"> Obeso </td>
+                </tr>
+                
+            </table>
+        </div> -->
+    </div>
+        <div class="painel">
+                <div class="button"> 
+                    <button class="btn reset">
+                        Nova Consulta
+                    </button> 
+                </div>
+        </div>
+    </div>
+</div>
+<script src="imc.js"></script>
+</body>
+</html>

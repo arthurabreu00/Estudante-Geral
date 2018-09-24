@@ -1,0 +1,45 @@
+*{
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: roboto;
+}
+
+table{
+    background: black;
+    border: 3px solid rgb(255, 0, 0);
+    color:white;
+    text-align: center;
+}
+th,td{
+    padding: 0px 8px;
+}
+    
+
+
+
+.titulo{
+    color: rgb(255, 255, 255)
+}
+
+.btn button{
+    width: 100%;
+    background: red;
+    color:white;
+    border: none;
+}
+
+.resultTxt{
+    font-size: 1.1em;
+}
+.resultFinal{
+    font-size: 1.5em;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.order{
+    width: 90%;
+    height: 105%;
+    padding: 20px 0px; 
+    font-size: 1.1em;;
+}

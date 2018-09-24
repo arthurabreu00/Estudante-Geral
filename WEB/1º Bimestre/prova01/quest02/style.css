@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+table{
+    border: 1px solid;
+}
+
+span{
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+input{
+    padding: 10px;
+
+}
+
+#sal{
+    width: 310px;
+}
+
+.formulario{
+    width: 500px;
+}
+
+.btn{
+    padding: 20px;
+    width: 200px;
+    border: none;
+    border: 1px solid black;
+    background: greenyellow
+    
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+#result{
+    font-size: 1em;
+    color:red;
+}
+
+#resultado{
+    font-size: 2em;
+}

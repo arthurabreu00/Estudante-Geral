@@ -1,0 +1,58 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+#container{
+    position: absolute;
+    margin-left: 40%;
+    width: 400px;
+}
+.title{
+    padding:10px;
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+}
+.calculator{
+    border: 1px solid black;
+}
+.rt{
+    padding: 10px;
+    color:white;
+    background: black;
+}
+.rt h2{
+    text-align: right
+}
+input{
+    padding: 5px;
+    width:75%;
+}
+span{
+    padding-top: 5px;
+    padding-left: 1px
+}
+.display{
+    padding: 10px;
+    background: black;
+    width: 400px;
+    border-top: 1px white solid;
+    height: 5em;
+}
+
+.status{
+    color:white;
+    text-align: justify;
+   
+}
+
+.calculator{
+    padding:10px;
+}
+
+.title img{
+    width: 60px;
+}

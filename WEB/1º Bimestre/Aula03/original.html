@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function verificaCampo() {
+            var v_campoTexto = document.getElementById('campoTexto');
+            if (v_campoTexto.value != "")
+                alert("Você digitou: " + v_campoTexto.value)
+            else
+                alert("Por favor, preencha o campo!")
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="campoTexto" style="border:#FF0000 solid 2px" />
+    <br>
+    <input type="button" onclick="verificaCampo()" value="Verificar Campo" style="background-color:#000000;color:#FFFFFF" />
+</body>
+
+</html>

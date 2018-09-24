@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atividade 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+<body>
+
+    <!-- 5 - Faça uma página html e o código em javascript que leia 3 valores inteiros 
+    e apresente na tela o maior deles e em seguida escreva-os em ordem decrescente. -->
+
+
+    <div>
+        <span> 1º Número </span>
+        <input type="number" placeholder="1º Número"  required id="num0"> 
+    </div>
+    <div>
+        <span> 2º Número </span>
+        <input type="number" placeholder="2º Número"  required id="num1">
+    </div>
+
+    <div> 
+        <span> 3º Número </span>
+        <input type="number" placeholder="3º Número"  required id="num2"> 
+    </div>
+
+    <div> <br>
+        <input type="button" value="Qual o maior ?" onclick="ord()" id="btn">
+    </div>
+    <div class="ordem"> ORDEM:   </div>
+    <div id="result"> </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
