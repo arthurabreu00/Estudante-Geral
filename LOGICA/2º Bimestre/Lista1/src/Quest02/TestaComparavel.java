@@ -13,7 +13,12 @@ public class TestaComparavel {
 		
 		Comparavel comp = new Comparavel(num);
 		
+		System.out.print("Digite outro número: ");
+		int num2 = input.nextInt();
 		
+		comp.ehMaiorOuIgual(num2);
+		comp.ehMenorOuIgual(num2);
+		comp.ehDiferente(num2);
 				
 	}
 
