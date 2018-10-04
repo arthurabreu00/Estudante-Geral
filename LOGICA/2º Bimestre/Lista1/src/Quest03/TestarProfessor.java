@@ -6,41 +6,50 @@ public class TestarProfessor {
 
 	public static void main(String[] args) {
 
-	        Scanner input = new Scanner(System.in);
-	        
-	        System.out.print("Digite o nome do professor: ");
-	        String professor = input.nextLine();
-	        System.out.print("Digite o nome da disciplina: ");
-	        String disciplina = input.nextLine();
-	        System.out.print("Digite o número de registro: ");
-	        int reg = input.nextInt();
-	        
-	        int dia = 0;
-	        
-	        while(true) {
-	        System.out.print("Digite o dia da admissão: ");
-	        	dia = input.nextInt();
-	        	if(dia <= 31) break;
-	        }
-	        
-	        int mes = 0;
-	        
-	        while(true){
-	        	
-	        System.out.print("Digite o mês da admissão: ");
-	        	mes = input.nextInt();
-	        	if(mes <= 12) break;
-	        }
-	        
-	        
-	        System.out.print("Digite o ano da admissão: ");
-	        int ano = input.nextInt();
-	        
-	        Professor prof = new Professor(professor,disciplina,reg,dia,mes,ano);
-	        
-	        prof.imprimir();
-	    }
+		Scanner input = new Scanner(System.in);
+		
+		for (int i = 0; i < 3; i++) {
+			System.out.println("Digite os dados do " + (i+1) + "º Professor");
+			
+			input = new Scanner(System.in);
+			System.out.println("Digite o nome do professor: ");
+			String prof = input.nextLine();
+			
+			input = new Scanner(System.in);
+			System.out.println("Digite o nome da disciplina: ");
+			String disc = input.nextLine();
+			
+			input = new Scanner(System.in);
+			System.out.println("Digite o número de registro: ");
+			int reg = input.nextInt();
 
+			int dia = 0;
+			
+			while (true) {
+				input = new Scanner(System.in);
+				System.out.println("Digite o dia da admissão: ");
+				dia = input.nextInt();
+				if (dia <= 31)
+					break;
+			}
+
+
+			int mes = 0;
+			while (true) {
+				input = new Scanner(System.in);
+				System.out.println("Digite o mês da admissão: ");
+				mes = input.nextInt();
+				if (mes <= 12)
+					break;
+			}
+			input = new Scanner(System.in);
+			System.out.println("Digite o ano da admissão: ");
+			int ano = input.nextInt();
+
+			Professor prof2 = new Professor(prof, disc, reg, dia, mes, ano);
+
+			prof2.imprimir();
+		}
 	}
 
-
+}
