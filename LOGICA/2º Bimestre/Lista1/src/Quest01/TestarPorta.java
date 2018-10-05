@@ -14,10 +14,13 @@ public class TestarPorta {
 		
 		porta.abre();
 		porta.fecha();
-		porta.pinta("Preto");
+		String cor = "vermelho";
+		porta.pinta(cor);
 		porta.alteraDimensao(4,3);
 		porta.estaAberta();
+	
 		porta.imprimir();
+		
 
 	}
 

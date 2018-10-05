@@ -5,36 +5,55 @@ import java.util.Scanner;
 public class TestarCinema {
 
 	public static void main(String[] args) {
-		
+
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Digite os dados da sessão");
 		
-		System.out.print("Data: ");
-		int data = input.nextInt();
+		String data = "";
 		
-		System.out.print("Horario: ");
-		float horario = input.nextFloat();
-		
+		while(true){
+			System.out.print("Data: (DD/MM/AAAA) ");
+			data = input.next();
+			if(data.length() == 10)
+				break;
+			else
+				System.out.println("Data invalida");
+		}
+
+
+		System.out.print("Horario: (00:00) ");
+		String horario = input.next();
+
 		System.out.print("Sala: ");
 		int sala = input.nextInt();
-		
+
 		System.out.print("Valor: ");
 		float valor = input.nextFloat();
+
+		EntradaDeCinema ent = new EntradaDeCinema(data, horario, sala, valor);
 		
-		EntradaDeCinema ent = new EntradaDeCinema(data,horario,sala,valor);
 		
 		System.out.println("Dados do cliente");
+		  
+		String nasc = "";
 		
-		System.out.print("Data de nascimento: ");
-		int nasc = input.nextInt();
+		while(true){
+			System.out.print("Data: (DD/MM/AAAA) ");
+			nasc = input.next();
+			if(nasc.length() == 10)
+				break;
+			else
+				System.out.println("Data invalida");
+		}
 		
-		System.out.print("Número da carteira de estudante: ");
+		System.out.print("Número da carteira de estudante: "); 
 		int cart = input.nextInt();
+	
+		ent.calculaDescontoHorario(nasc, cart); 
+		ent.imprimaString(nasc); 
 		
-		ent.calculaDescontoHorario(nasc,cart);
-		ent.imprimaString();
-		
+
 	}
 
 }

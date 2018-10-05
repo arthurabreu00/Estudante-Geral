@@ -7,6 +7,7 @@ public class Porta {
 	float largura;
 	float altura;
 	
+	
 	public Porta(){
 		
 		this.abertaFechado = false;
@@ -48,6 +49,7 @@ public class Porta {
 	}
 	
 	public void imprimir(){
+		
 		if(abertaFechado)
 			System.out.println("A porta está ABERTA" );
 		else
