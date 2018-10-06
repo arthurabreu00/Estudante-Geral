@@ -1,33 +1,47 @@
 package Quest04;
 
-import java.util.Scanner;
+import java.util.*;
 import Quest03.Data;
 
 public class TestarCinema {
 
 	public static void main(String[] args) {
-		
 
+		
 
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Digite os dados da sessão");
 		
 		String data = "";
+		String horario = "";
+		
+		Data date = new Data();
 		
 		while(true){
-			System.out.print("Data: (DD/MM/AAAA) ");
+			
+			System.out.print("Data: (DD/MM/AAAA)");
 			data = input.next();
-			if(data.length() == 10)
+			date.getDadosSistema(data, horario);
+			
+			if(date.valData())
 				break;
 			else
 				System.out.println("Data invalida");
 		}
 
-
-		System.out.print("Horario: (00:00) ");
-		String horario = input.next();
-
+		
+		while(true){
+			System.out.print("Horario: (00:00) ");
+			horario = input.next();
+			date.getDadosSistema(data, horario);
+			
+			if(date.valHoraMin())
+				break;
+			else
+				System.out.println("Horario invalido");
+		}
+		
 		System.out.print("Sala: ");
 		int sala = input.nextInt();
 
@@ -44,7 +58,8 @@ public class TestarCinema {
 		while(true){
 			System.out.print("Data: (DD/MM/AAAA) ");
 			nasc = input.next();
-			if(nasc.length() == 10)
+			date.getDadosSistema(nasc, horario);
+			if(date.valData())
 				break;
 			else
 				System.out.println("Data invalida");
