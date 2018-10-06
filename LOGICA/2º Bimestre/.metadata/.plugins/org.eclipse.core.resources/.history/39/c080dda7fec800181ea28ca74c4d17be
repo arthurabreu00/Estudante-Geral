@@ -7,7 +7,7 @@ public class TestarCinema {
 
 	public static void main(String[] args) {
 		
-
+		Data date = new Data;
 
 		Scanner input = new Scanner(System.in);
 		

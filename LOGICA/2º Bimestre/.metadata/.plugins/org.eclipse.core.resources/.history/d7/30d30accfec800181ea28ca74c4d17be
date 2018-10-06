@@ -4,22 +4,18 @@ import Quest03.Data;
 
 public class EntradaDeCinema {
 
-
-	
 	String dataDofilme;
 	String horario;
 	int sala;
-	float valor;  
+	float valor;
 	int idadeCli;
-	Data date = new Data(dataDofilme);
-	
+
 	public EntradaDeCinema(String data, String horario, int sala, float valor) {
-		
+		Data date = new Data();
 		this.dataDofilme = data;
 		this.horario = horario;
 		this.sala = sala;
 		this.valor = valor;
-		date = new Data(dataDofilme);
 	}
 
 
@@ -97,7 +93,7 @@ public class EntradaDeCinema {
 		// ACIMA GARANTO QUE O METODO calculaDescontoHorario() SERA O ULTIMO A
 		// SER EXECUTADO.
 
-		if (date.getHora() < 16)
+		if (this.getHora() < 16)
 			this.valor *= 0.1;
 
 		return this.valor;

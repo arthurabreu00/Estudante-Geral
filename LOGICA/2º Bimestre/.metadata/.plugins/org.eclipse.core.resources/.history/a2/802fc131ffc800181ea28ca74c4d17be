@@ -4,12 +4,10 @@ import Quest03.Data;
 
 public class EntradaDeCinema {
 
-
-	
 	String dataDofilme;
 	String horario;
 	int sala;
-	float valor;  
+	float valor;
 	int idadeCli;
 	Data date = new Data(dataDofilme);
 	
@@ -19,7 +17,6 @@ public class EntradaDeCinema {
 		this.horario = horario;
 		this.sala = sala;
 		this.valor = valor;
-		date = new Data(dataDofilme);
 	}
 
 

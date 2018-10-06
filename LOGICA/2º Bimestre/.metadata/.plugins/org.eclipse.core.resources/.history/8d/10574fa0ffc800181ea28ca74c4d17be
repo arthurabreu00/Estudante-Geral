@@ -9,9 +9,9 @@ public class EntradaDeCinema {
 	String dataDofilme;
 	String horario;
 	int sala;
-	float valor;  
+	float valor;
 	int idadeCli;
-	Data date = new Data(dataDofilme);
+	Data data = new Data(dataDofilme);
 	
 	public EntradaDeCinema(String data, String horario, int sala, float valor) {
 		
@@ -19,7 +19,7 @@ public class EntradaDeCinema {
 		this.horario = horario;
 		this.sala = sala;
 		this.valor = valor;
-		date = new Data(dataDofilme);
+		data = new Data(dataDofilme);
 	}
 
 

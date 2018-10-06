@@ -1,13 +1,10 @@
 package Quest04;
 
 import java.util.Scanner;
-import Quest03.Data;
 
 public class TestarCinema {
 
 	public static void main(String[] args) {
-		
-
 
 		Scanner input = new Scanner(System.in);
 		
