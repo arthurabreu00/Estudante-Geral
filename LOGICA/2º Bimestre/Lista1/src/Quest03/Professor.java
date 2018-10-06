@@ -10,14 +10,13 @@ public class Professor {
 	String data2;
 	int anoTrabs;
 
-	Data data = new Data(this.data2);
-	
+	Data data = new Data();
 	public Professor(String professor, String disciplina, int reg,String dia) {
 
 		this.nomeProfessor = professor;
 		this.nomeDisciplina = disciplina;
 		this.reg = reg;
-		data = new Data(dia);
+		data.getDadosSistema(dia);
 		data2 = dia;
 	}
 

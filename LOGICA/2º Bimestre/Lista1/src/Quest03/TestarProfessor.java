@@ -42,6 +42,8 @@ public class TestarProfessor {
 
 			prof2.imprimir();
 		}
+		
+		System.out.println("<<< FIM DO PROGRAMA >>>");
 	}
 
 }

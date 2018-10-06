@@ -29,7 +29,7 @@ public class TestarCinema {
 			else
 				System.out.println("Data invalida");
 		}
-
+ 
 		
 		while(true){
 			System.out.print("Horario: (00:00) ");

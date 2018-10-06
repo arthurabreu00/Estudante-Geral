@@ -9,17 +9,6 @@ public class Data {
 	public String data;
 	public int anoAtual;
 	Calendar c = Calendar.getInstance();
-
-	
-	public Data(String data){
-		
-		this.data = data;
-		
-	}
-	
-	public Data(){
-		
-	}
 	
 	
 	public String getDateTime() { 
