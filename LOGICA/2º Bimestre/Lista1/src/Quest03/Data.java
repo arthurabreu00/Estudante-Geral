@@ -77,7 +77,7 @@ public class Data {
 		int hr = Integer.parseInt(String.copyValueOf(hora));
 		int min = Integer.parseInt(String.copyValueOf(minuto));
 		
-		int hm[] = new int[2];
+		int hm[] = {hr,min};
 		
 		return hm;
 	}
