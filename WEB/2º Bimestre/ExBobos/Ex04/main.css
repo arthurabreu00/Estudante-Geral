@@ -1,0 +1,32 @@
+*{
+    padding: 20px;
+    margin: 0 auto;
+}
+
+main{
+    width: 80px;
+}
+
+input{
+    border: 1px solid black;
+}
+
+button{
+    width: 423px;
+    font-size: 1.2em;
+    border: 1px solid black;
+    background: linear-gradient(rgb(35, 124, 35),rgb(21, 146, 21));
+    color:white;
+    opacity: 0.9;
+}
+
+button:hover{
+    opacity: 1;
+    
+}
+
+button:active{
+
+    background: linear-gradient(rgb(21, 146, 21),rgb(35, 124, 35));
+
+}

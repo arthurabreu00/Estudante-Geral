@@ -1,0 +1,13 @@
+*{
+    margin: 0 auto;
+}
+
+#on{
+    cursor: pointer;
+    display: block;
+}
+
+#off{
+    cursor: pointer;
+    display: none;
+}

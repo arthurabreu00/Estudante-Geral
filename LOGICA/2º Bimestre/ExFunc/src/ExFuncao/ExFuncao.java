@@ -46,22 +46,21 @@ public class ExFuncao {
 		return somaImposto;
 	}
 
-	String ex6(int hora,int minutos){
+	String ex6(int hora, int minutos) {
 
 		String f = "";
-		
-		if(hora > 24 || minutos > 59)
+
+		if (hora > 24 || minutos > 59)
 			return "Invalido";
-		
-		if(hora >= 12){
+
+		if (hora >= 12) {
 			hora -= 12;
 			f = " P.M";
-		}
-		else{
-			if(hora == 0){
+		} else {
+			if (hora == 0) {
 				hora += 12;
 			}
-			
+
 			f = " A.M";
 		}
 		String formt = hora + ":" + minutos + f;
@@ -69,6 +68,21 @@ public class ExFuncao {
 		return formt;
 
 	}
+
+	
+	float ex7(float valor, float dias){
+		
+		return valor;
+	}
+	
+	int ex8(int num){
+		
+		String dig = Integer.toString(num);
+		int nDig = dig.length();
+				
+		return nDig;
+	}
+	
 	
 	
 
