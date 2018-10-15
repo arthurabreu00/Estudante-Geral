@@ -20,7 +20,7 @@ public class TestarCinema {
 		
 		while(true){
 			
-			System.out.print("Data: (DD/MM/AAAA)");
+			System.out.print("Data: (DD/MM/AAAA): ");
 			data = input.next();
 			date.getDadosSistema(data, horario);
 			
@@ -32,7 +32,7 @@ public class TestarCinema {
  
 		
 		while(true){
-			System.out.print("Horario: (00:00) ");
+			System.out.print("Horario: (00:00): ");
 			horario = input.next();
 			date.getDadosSistema(data, horario);
 			
@@ -56,7 +56,7 @@ public class TestarCinema {
 		String nasc = "";
 		
 		while(true){
-			System.out.print("Data: (DD/MM/AAAA) ");
+			System.out.print("Data: (DD/MM/AAAA): ");
 			nasc = input.next();
 			date.getDadosSistema(nasc, horario);
 			if(date.valData())
