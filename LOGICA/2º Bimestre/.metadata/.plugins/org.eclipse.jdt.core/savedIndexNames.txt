@@ -1,4 +1,0 @@
-INDEX VERSION 1.127+C:\Users\277093\Desktop\Estudante-Geral\LOGICA\2º Bimestre\.metadata\.plugins\org.eclipse.jdt.core
-221254878.index
-749647869.index
-2464880308.index
