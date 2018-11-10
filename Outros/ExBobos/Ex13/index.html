@@ -1,61 +1,25 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Meus códigos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // Comentario 
+        
+        function trocarCor(cor){
+            document.querySelector("body").style.background = cor;
+        }
 
-    <Meta charset="utf-8">
+
+    </script>
 </head>
-
-<body bgcolor="chocolate">
-
-    <h1 style="color:bulrvwood ">CHOCOLATE</h1>
-
-    Buscar Por <input type="Search" class="busca" style="background: black;width: 500px;height: px;"/> <button>Buscar</button>
-    <h1 align="center" style="color:darkorange">▌│█║▌║▌║ COMO REMOVER VÍRUS DO PEN-DRIV SEM PROGRAMAS ▌│█║▌║▌║</h1><br />
-
-    <p>
-        <h2 style="color:blue"><del>3ºPasso</del></h2>
-        <h3 style="color:azure"> Despois de ter deletado os vírus do
-            computador, vamos para os próximos passos. Aperte e
-            segure o botão do <i>“Windows”</i> encontrado no teclado,
-            geralmente representado por uma bandeirinha, em
-            seguida aperte a letra <b>“R”.</b> Irá se abrir uma pequena
-            janela, digite o seguinte comando <i>“cmd”</i> e clique em
-            <i>"OK"</i>.
-    </p><br /></h3>
-    <p>
-        <h2 style="color:blue">2ºPasso</h2>
-        <h3 style="color:azure"> Outra janela irá se abrir. Digite o seguinte
-            comando: " attrib -h -r -s /s /d D:*.*", sem aspas.
-            Lembrando que a letra <i>"D"</i> deve ser alterada pela que
-            corresponde ao seu pendrive. Após alterar as letra
-            aperte <i>"Enter"</i>.
-    </p>
-    </h3>
-    <p>
-        <h2 style="color:blue">3ºpasso</h2>
-        <h3 style="color:azure"> Agora é só verificar se as ameaças foram
-            removidas do pendrive!
-    </p>
-    </h3>
-
-    <h1 style="color:darkorange">A pendrive está protegida contra escrita</h1>
-    <p>
-        <h3 style="color:azure">Se não consegue gravar dados para uma pendrive é porque pode estar protegida contra
-            escrita. Alguns dispositivos podem ter interruptores físicos que servem para proteger e desproteger os
-            dados da pendrive. Se não tiverem terá de a desbloquear através de software. Para tal prima a combinação de
-            teclas ‘Windows + R’, escreva regedit e prima ‘Enter’. Procure a seguinte chave do Registro do Windows:</h3>
-    </p>
-    <h4 style="color:red">HKEY_LOCAL_MACHINE </h4><br />
-    <h4 style="color:red">\SYSTEM</h4><br />
-    <h4 style="color:red">\CurrentControlSet</h4><br />
-    <h4 style="color:red">\Control</h4><br />
-    <h4 style="color:red">\StorageDevicePolicies</h4><br />
-    <p>
-        <h4 style="color:azure">Procure uma entrada chamada <h3 style="color:azure">StorageDevicePolicies.<h3 style="color:azure">
-                    Se existir, procure o valor WriteProtect. Se tiver o valor 1 é porque a pendrive está protegida,
-                    por isso altere o valor para 0 para a desproteger. Se a chave StorageDevicePolicies não existir,
-                    crie-a; adicione o valor WriteProtect e dê-lhe o valor 0. Reinicie a máquina para fazer com que as
-                    alterações sejam aplicadas.</h4>
-    </p>
-</body </html>
+<body>
+        <!-- Crie dois botões no HTML chamados: 'Verde', ,'Vermelho'. ao clicar neles, o style="background-color: 
+            {COR-SELECIONADA}" vai ser alterado dinamicamente Alterar-Style de uma div 
+        -->
+            <button onclick="trocarCor('green')"> Verde </button>
+            <button onclick="trocarCor('red')"> Vermelho </button>s
+</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+    margin: auto 0;
+}
+
+.main{
+    width: 20px;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+    vertical-align: center;
+}
+
+
+
+.boneco{
+    position: absolute;
+}
