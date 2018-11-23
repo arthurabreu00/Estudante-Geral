@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: flex-start;
+    height: 100%;
+}
+
+.flex-first{
+    display: flex;
+    justify-content: flex-start;
+    background: #ffffff;
+    width: 40%;
+    height: 100%;
+ 
+}
+
+.flex-second{
+    width: 60%;
+    background: url(img/bg3.png) no-repeat;
+}
+
+
+.flex-second .item{
+    margin-top: 10%;
+    color:white; 
+    padding: 140px;
+    text-align: justify;
+    margin-bottom: 48%;
+}
+.flex-second .item h1{
+    font-weight: 100;
+    font-size: 3em;
+}
+.flex-second .item h1 b{
+    font-weight: 700;
+}
+
+.flex-second .item h2{
+    margin-top: 15px;
+    font-size: 1em;
+    color:rgb(233, 233, 233);
+}
+
+label{
+    font-size: 0.8em;
+    margin-left:px;
+    color:rgb(189, 189, 189);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(189, 189, 189);
+}
+
+a:hover{
+    color: rgb(141, 140, 140)
+}
+
+form{
+    padding: 100px;
+    width: 500px;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    border-bottom: 1px solid rgb(153, 0, 255);
+    color:rgb(153, 0, 255);
+} 
+
+.txt{
+    color:rgb(189, 189, 189);
+    padding: 2px;
+    border-bottom: rgb(161, 161, 161);
+    outline: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    width: 100%;
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.form-create{
+    margin-left: 40px;
+    margin-top:20px;
+}
+
+.btn-form{
+
+    background: #352A6C;
+    color: white;
+
+    box-shadow: 100px 100px 100px 100px; 
+    float:right;
+}
+
+.btn{
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: none;
+    margin-left: 20px;
+}
+
+.btn-form:hover{
+    background: rgb(92, 74, 180);
+    color: white;
+    box-shadow: 0; 
+}
+
+
+.btn-form:disabled{
+    opacity: 0.6;
+}
+
+.logo{
+    padding: 30px;
+}
+
+.warning{
+    padding: 30px;
+    font-family: 1em;
+}
+
+.warning h3{
+    color:#352A6C;
+}
+
+.warning p{
+    float: left;
+    font-size: 0.6em;
+    margin-top: 10px;
+    color: rgb(189, 189, 189);
+    width: 60%;
+}
+
+.btn-warning{
+    float: right;
+    margin-right: 80px;
+    box-shadow: #e6e6e6 1px 3px 15px 1px;
+    background: #ffffff;
+}
