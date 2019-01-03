@@ -10,9 +10,12 @@
     vertical-align: center;
 }
 
-
-
 .boneco{
     position: absolute;
     left:0px;
+
 }
+
+/* .boneco img{
+    width: 100px;
+} */

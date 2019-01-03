@@ -119,6 +119,10 @@ textarea:focus, input:focus, select:focus {
     margin-left: 20px;
 }
 
+.bg-purple{
+    background: rgb(92, 74, 180);
+}
+
 .btn-form:hover{
     background: rgb(92, 74, 180);
     color: white;
