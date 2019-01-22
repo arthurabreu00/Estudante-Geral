@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 20px;
+    font-family: verdana,sans-serif;
+    background-color: #ADA472;
+}
+
+.card{
+
+    width: 420px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 15px
+}
+
+.card img{
+    display: flex;
+    width: 400px;
+    z-index: 1;
+}
+
+.card .title-logo{
+    font-size: 1.4rem;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    top:115px;
+    left: 320px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.title-logo-2{
+    font-size: 1.4rem;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    top:162px;
+    left: 300px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.contact{
+    text-align: center;
+    font-size: 2.4rem;
+    color:#000;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.contact .fab{
+    font-size:2.5rem;
+}
+
+/* .info{
+
+    margin-top: 50px;
+    margin: 20px;
+    background: #ADA472;
+    color:white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.info .info-title{
+    font-size: 1rem;
+} */
+
+.sabor{
+    color:#000;
+    font-size: 1rem;
+}
+
+.mt-3{
+    margin-top: 10px;
+}

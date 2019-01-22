@@ -1,0 +1,89 @@
+:root{ 
+    --degrade: linear-gradient(to right,#71DC96,#55C4F3);
+    --degrade-invertido : linear-gradient(to right,#55C4F3,#71DC96);
+}
+
+* {
+    margin: auto 0;
+}
+
+
+body{
+    background-color: #424c5d;
+}
+
+.navbar {
+    display: block;
+}
+
+.navbar-brand {
+    text-align: center;
+}
+
+.esqueceu{
+    color: #8c98ae;
+    opacity: 0.8;
+    transition: opacity 200ms linear;
+}
+
+.esqueceu:hover{
+    text-decoration: none;
+    color: #8c98ae;
+    opacity: 1;
+}
+
+.form-group{
+    padding: 0 20px;
+}
+
+.form-up {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    height: 0;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #ffffff;
+    transition: height linear 200ms;
+    color:white;
+}
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit{
+    width: 500px;
+    max-width: 300px;
+    border-radius: 200px;
+    background: var(--degrade);
+    border: none;
+    color:white;
+    text-shadow: 0px 0.5px 1.5px#6b6b6b;
+    height: 55px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+label.ativado {
+    font-size: .9rem;
+}
+
+label {
+    transition: font-size linear 200ms;
+    color: #8c98ae;
+}
+
+.form-up:focus,.form-up.ativado {
+    height: 50px;
+    border-color: #71DC96;
+}
+
+.form-up:focus {
+    outline: none;
+    margin: 0;
+}
